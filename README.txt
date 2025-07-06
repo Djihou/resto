@@ -34,3 +34,12 @@ https://tempusdominus.github.io/bootstrap-4/
 Demo Images:
 http://unsplash.com
 
+
+
+
+dans css, j'Ai du modifier 
+...existing code...
+.navbar-brand-center img {
+  height: 100px; /* Mets la taille que tu veux, par exemple 100px  de 50 a 100 */
+}
+pour que mes modification de la taille du logo dans css soient approuvées
