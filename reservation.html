@@ -238,7 +238,8 @@
             <div class="col-lg-4">
                 <div class="footer-widget pl-lg-5 pl-0">
                     <h4>Newsletter</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p>Stay updated with our daily specials!
+                        Receive the best African meals, exclusive offers, and the latest news directly in your inbox.</p>
                     <form id="newsletter">
                         <div class="form-group">
                             <input type="email" class="form-control" id="emailNewsletter" aria-describedby="emailNewsletter" placeholder="Enter email">
@@ -247,9 +248,6 @@
                     </form>
                 </div>
                 
-            </div>
-            <div class="col-md-12 d-flex align-items-center">
-                <p class="mx-auto text-center mb-0">Copyright 2019. All Right Reserved. Design by <a href="https://gettemplates.co" target="_blank">GetTemplates</a></p>
             </div>
             
         </div>
@@ -270,5 +268,20 @@
 
     <!-- Main JS -->
     <script src="js/app.min.js "></script>
+    <script>
+      $(function () {
+        $('#datetimepicker3').datetimepicker({
+          format: 'HH:mm'
+        }).on('change.datetimepicker', function(e) {
+          $(this).datetimepicker('hide');
+        });
+        $('#datetimepicker4').datetimepicker({
+          format: 'YYYY-MM-DD',
+          icons: { time: '' }
+        }).on('change.datetimepicker', function(e) {
+          $(this).datetimepicker('hide');
+        });
+      });
+    </script>
 </body>
 </html>
